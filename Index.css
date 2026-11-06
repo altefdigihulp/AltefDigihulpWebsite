@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+hr{
+    height: 1px;
+    background-color: black;
+    border: black;
+}
+
+body{
+    background-color: #FFFFF0;
+}
+
+nav{
+    height: 100px;
+
+    display: flex;
+    justify-content: left;
+
+    position: sticky;
+    top: 0;
+
+}
+
+nav div.filler{
+    background-color: rgba(14, 61, 67);
+    width: 28%;
+    height: 100%;
+}
+
+
+nav div.nav-links{
+    height: 100%;
+    width: 72%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2%;
+
+
+    background-color: rgb(5, 1, 26);
+
+}
+
+
+nav img{
+    height: 100%;
+    width: auto;
+
+}
+
+nav a{
+    border: 1px white solid;
+    border-radius: 5px;
+    
+    height: 70%;
+    width: 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: rgba(14, 61, 67);
+}
+
+nav a:hover{
+    cursor: pointer;
+
+    background-color: rgb(25, 104, 114);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    margin: 2% 20%;
+
+    border: 1px solid #F0EAD6;
+
+    padding: 5px;
+}
+
+main div{
+
+    width: 80%;
+
+    padding: 5px;   
+}
+
+main div:nth-child(even){
+    background-color: #F0EAD6;
+}
+
+main div:nth-child(odd){
+    background-color: rgb(204, 199, 182);
+}
+
+main div a{
+    color: darkblue;
+}
+
+ul{
+    padding-inline: 1em;
+}
+
+main div.tarieven ul li{
+    margin-bottom: 10px;
+}
+
+footer{
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(14, 61, 67);
+    color: white;
+}
+
+/*@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+}*/
+
+@media (max-width: 1500px) {
+    nav a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1000px){
+    *{
+        font-size: 1rem;
+    }
+
+    nav{
+        height: 75px;
+
+        position: sticky;
+    }
+
+    nav div.nav-links img, nav div.filler{
+        display: none;
+    }
+
+    nav div.nav-links{
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        gap: 0;
+    }
+
+    nav div.nav-links a{
+        width: 25%;
+        height: 100%;
+
+        border-radius: 0;
+        font-size: 1.1rem;
+    }
+
+    nav div.nav-links a.homeButton{
+        display: none;
+    }
+    
+    main{
+        width: 100%;
+        padding: 1%;
+
+        margin: 0;
+    }
+
+    main div{
+        width: 100%;
+    }
+
+    main div p, main div li{
+        font-size: 1.1rem;
+    }
+
+    main div h1, main div h2{
+        text-align: center;
+    }
+
+    footer span{
+        font-size: 0.9rem;
+    }
+    
+
+}
